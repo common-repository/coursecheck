@@ -1,0 +1,88 @@
+@charset 'UTF-8';
+
+.cchk-recent-reviews{
+    line-height:20px; 
+}
+.cchk-recent-reviews-columns{
+    line-height:20px; 
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+}
+@media (max-width: 800px){
+    .cchk-recent-reviews-columns{
+        display:block;
+    }
+}
+.cchk-recent-review {
+    border-top: 1px solid lightgray;
+    padding: 10px 0;
+}
+.cchk-recent-reviews-columns .cchk-recent-review{
+    padding: 10px 0 0 0;
+}
+.cchk-recent-reviews .cchk-recent-review:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+.cchk-stars {
+    font-size: 24px;
+    line-height: 24px;
+}
+.cchk-stars span {
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    color: white;
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 4px;
+    margin-right: 4px;
+    line-height: 24px;
+}
+.cchk-stars span::before {
+    content: '\2605';
+}
+.cchk-recent-rating-1 .cchk-stars span:nth-child(1) {
+    background-color: #FFC50A;
+}
+.cchk-recent-rating-2 .cchk-stars span:nth-child(-n+2) {
+    background-color: #FFC50A;
+}
+.cchk-recent-rating-3 .cchk-stars span:nth-child(-n+3) {
+    background-color: #FFC50A;
+}
+.cchk-recent-rating-4 .cchk-stars span:nth-child(-n+4) {
+    background-color: #FFC50A;
+}
+.cchk-recent-rating-5 .cchk-stars span {
+    background-color: #FFC50A;
+}
+.cchk-recent-course{
+    font-weight:100;
+    padding-top: 5px;
+}
+.cchk-recent-comment{
+    background: url(../images/icon-quote.png) no-repeat left top;
+    font-weight:100;
+    font-size: small;
+    font-style: italic;
+    padding-left: 30px;
+    margin-top: 5px;
+}
+.cchk-recent-credits{
+    margin: 10px 0;
+    font-size: small;
+}
+.cchk-recent-author{
+    font-weight: bold;
+}
+.cchk-recent-date{
+    margin-left: 20px;
+    color: darkgray;
+}
+.cchk-recent-more{
+    text-align: right;
+    font-size: small;
+}
+
